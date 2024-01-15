@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "project-tests"
+version = "0.1.0"
+description = "Studying autotesting"
+authors = ["Elena Dobruk <elena.dobruk@yandex.ru>"]
+readme = "README.md"
+packages = [
+  { include = "package_name" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
